@@ -1,9 +1,14 @@
-import Navbar from "@/components/Navbar"
+import CompCard from "@/components/CompCard";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main>
-<Navbar />
-    </main>
-  )
+    <>
+      <Navbar />
+
+      <main>
+        <CompCard />
+      </main>
+    </>
+  );
 }

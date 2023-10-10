@@ -3,7 +3,7 @@ export default function Navbar(params: any) {
       <>
         <nav className="bg-spaceCadet ">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <a href="/" className="flex items-center">
               <img
                 src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/24257.png"
                 className="h-10 mr-3 rounded-lg"
@@ -121,7 +121,7 @@ export default function Navbar(params: any) {
               <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border bg-spaceCadet md:flex-row md:space-x-8 md:mt-0 md:border-0">
                 <li>
                   <a
-                    href="#"
+                    href="/"
                     className="block py-2 pl-3 pr-4 text-white bg-turquoise rounded md:bg-transparent md:text-turquoise md:p-0 md:dark:text-turquoise"
                     aria-current="page"
                   >
