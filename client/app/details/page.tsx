@@ -1,11 +1,11 @@
 import Navbar from "@/components/Navbar";
-import Table from "@/components/Table";
+import StackCard from "@/components/StackCard";
 
 export default function details(params:any) {
     return (
         <>
         <Navbar />
-        <Table />
+        <StackCard />
         </>
     )
 }
