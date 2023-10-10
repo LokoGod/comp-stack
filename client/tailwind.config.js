@@ -11,11 +11,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        turquoise: '#41E2BA',
-        seasalt: '#F7F7F9',
-        aureolin: '#F7E733',
-        cyclamen: '#E86A92',
-        spaceCadet: '#2B2D42',
+        turquoise: '#41E2BA', // Light green
+        seasalt: '#F7F7F9', // white
+        aureolin: '#F7E733', // yellow
+        cyclamen: '#E86A92', // pink
+        spaceCadet: '#2B2D42', // blackish
       }
     },
   },
