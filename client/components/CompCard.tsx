@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import { CompPopOver } from "./CompPopOver";
 import {
   Card,
   CardHeader,
@@ -15,6 +16,16 @@ export function CompCard(params: any) {
       name: "Sysco LABS",
       size: "501-1,000 employees",
       logo: "https://media.licdn.com/dms/image/D560BAQHe1jLow77zGg/company-logo_200_200/0/1688472902715/syscolabssl_logo?e=1704931200&v=beta&t=Vr5Ml-IcZkqe6HF9v0tJDE1EvSZCkz7JZO_Ze5WH4G8",
+      pop: {
+        Field: "Front-End",
+        Tech: "React.Js",
+        Field2: "Back-End",
+        Tech2: "Node.Js",
+        Field3: "Database",
+        Tech3: "SQL",
+        Field4: "Cloud",
+        Tech4: "Azure",
+      },
     },
     {
       name: "99x",
@@ -67,12 +78,14 @@ export function CompCard(params: any) {
             />
           </CardContent>
           <CardFooter className="flex flex-col items-center">
+          <CompPopOver content={card.pop}>
             <button
               type="button"
               className="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
             >
               View Stack
             </button>
+            </CompPopOver>
           </CardFooter>
         </Card>
       ))}
