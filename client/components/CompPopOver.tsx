@@ -2,15 +2,6 @@ import * as React from "react";
 import { Popover, PopoverTrigger, PopoverContent } from "./ui/popover";
 import { Badge } from "@/components/ui/badge";
 
-import {
-  Table,
-  TableHeader,
-  TableBody,
-  TableHead,
-  TableRow,
-  TableCell,
-} from "./ui/table";
-
 interface CompPopOverProps {
   content: {
     Field: string;
@@ -31,41 +22,12 @@ export function CompPopOver({ content, children }: CompPopOverProps) {
       <PopoverTrigger>{children}</PopoverTrigger>
       <PopoverContent>
         {content ? (
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Field</TableHead>
-                <TableHead>Tech</TableHead>
-                {/* Add more table headings for additional fields here */}
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow>
-                <TableCell>{content.Field}</TableCell>
-                <TableCell>
-                  <Badge variant="default">{content.Tech}</Badge>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>{content.Field2}</TableCell>
-                <TableCell>
-                  <Badge variant="secondary">{content.Tech2}</Badge>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>{content.Field3}</TableCell>
-                <TableCell>
-                  <Badge variant="third">{content.Tech3}</Badge>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>{content.Field4}</TableCell>
-                <TableCell>
-                  <Badge variant="fourth">{content.Tech4}</Badge>
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
+          <h3 className="text-center">
+            <Badge variant="default">{content.Tech}</Badge>&nbsp;
+            <Badge variant="secondary">{content.Tech2}</Badge>&nbsp;
+            <Badge variant="third">{content.Tech3}</Badge>&nbsp;
+            <Badge variant="fourth">{content.Tech4}</Badge>&nbsp;
+          </h3>
         ) : (
           <p>No data available</p>
         )}
