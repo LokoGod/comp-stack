@@ -1,17 +1,23 @@
 import express from "express";
 import cors from "cors";
+import bodyParser from "body-parser";
 import "dotenv/config";
 
-import DBconfig from "./database/DBconfig.js";
+// Importing Custom Routes
+import companyRoutes from './routes/companyRoutes.js'
 
-import demo from "./controllers/demo.js";
-
+// Instances
 const app = express();
 
-app.use("/", demo);
+// Middleware
+app.use(bodyParser.json());
+
+// API Routing
+app.use('/company', companyRoutes)
 
 const port = process.env.PORT || 9000;
 
+// Server spin-up
 const start = async () => {
   try {
     app.listen(port, () => {
