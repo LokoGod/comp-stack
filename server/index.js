@@ -5,6 +5,7 @@ import "dotenv/config";
 
 // Importing Custom Routes
 import companyRoutes from './routes/companyRoutes.js'
+import techRoutes from './routes/techRoutes.js'
 
 // Instances
 const app = express();
@@ -14,6 +15,8 @@ app.use(bodyParser.json());
 
 // API Routing
 app.use('/api/v1/company', companyRoutes)
+app.use('/api/v1/tech', techRoutes)
+
 
 const port = process.env.PORT || 9000;
 

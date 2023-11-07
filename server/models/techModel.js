@@ -1,4 +1,4 @@
-import db from "../database/DBconfig";
+import db from "../database/DBconfig.js";
 
 const techModel = {
   getTech: (callback) => {
