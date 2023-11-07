@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // API Routing
-app.use('/company', companyRoutes)
+app.use('/api/v1/company', companyRoutes)
 
 const port = process.env.PORT || 9000;
 
