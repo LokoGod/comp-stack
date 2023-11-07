@@ -7,6 +7,7 @@ import "dotenv/config";
 import companyRoutes from "./routes/companyRoutes.js";
 import techRoutes from "./routes/techRoutes.js";
 import comp_typesRoutes from "./routes/comp_typesRoutes.js";
+import comp_sizeRoutes from "./routes/comp_sizeRoutes.js";
 
 // Instances
 const app = express();
@@ -18,6 +19,7 @@ app.use(bodyParser.json());
 app.use("/api/v1/company", companyRoutes);
 app.use("/api/v1/tech", techRoutes);
 app.use("/api/v1/compTypes", comp_typesRoutes);
+app.use("/api/v1/compSize", comp_sizeRoutes);
 
 const port = process.env.PORT || 9000;
 
