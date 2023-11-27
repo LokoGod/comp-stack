@@ -3,7 +3,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import "dotenv/config";
 
-// Importing Custom Routes
+// Importing custom Routes
 import companyRoutes from "./routes/companyRoutes.js";
 import techRoutes from "./routes/techRoutes.js";
 import comp_typesRoutes from "./routes/comp_typesRoutes.js";
